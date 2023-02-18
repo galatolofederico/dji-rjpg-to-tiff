@@ -1,6 +1,6 @@
 /env
-/inputs
-/outputs
+/inputs*
+/outputs*
 /sdk
 
 /.vscode
