@@ -17,5 +17,4 @@ for file in os.listdir(args.input_folder):
     original_file = Image.open(os.path.join(args.input_folder, file))
     raw_data = open(os.path.join(args.raw_folder, file + ".raw"), "rb").read()
     raw_file = Image.frombytes("F", original_file.size, raw_data)
-    raw_file = raw_file.transpose(Image.FLIP_LEFT_RIGHT)
     raw_file.save(os.path.join(args.outout_folder, file + ".tif"))
